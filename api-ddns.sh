@@ -21,7 +21,7 @@ ipv6api="https://api6.ipify.org/"
 if [ $record_type = "A" ];then
     ip=`curl -ksG ${ipv4api}`        
 else
-    ip=`curl -ksG https://api6.ipify.org/`     
+    ip=`curl -ksG ${ipv6api}`     
 fi
 
 #start Get zone identifier
