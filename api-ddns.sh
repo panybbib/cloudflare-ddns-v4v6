@@ -30,4 +30,9 @@ record_id=`curl -ksX GET "https://api.cloudflare.com/client/v4/zones/${zone_id}/
 
 #update
 curl -ksX PUT "https://api.cloudflare.com/client/v4/zones/${zone_id}/dns_records/${record_id}" -k -H "X-Auth-Email: ${email}" -H "X-Auth-Key: ${GAK}" -H "Content-Type: application/json" --data "{\"id\":\"$record_id\",\"type\":\"$record_type\",\"name\":\"$record_name\",\"content\":\"$ip\",\"proxied\":$proxy}"
+###########################################
+###########################################
 echo "[CloudFlare]" "${record_name} : ${ip}"
+###########################################
+###########################################
+nslookup ${record_name}
