@@ -14,7 +14,7 @@ record_type="A"
 proxy="false"
 
 ##外网api
-ipv4api="http://icanhazip.com"
+ipv4api="https://api.ipify.org/"
 ipv6api="https://api6.ipify.org/"
 
 #获取IP地址
