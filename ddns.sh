@@ -32,4 +32,9 @@ curl -ksX PUT "https://api.cloudflare.com/client/v4/zones/${zone_id}/dns_records
 
 #上传日记
 logger -t "[CloudFlare]" "${record_name} : ${ip}"
+###########################################
+###########################################
 echo "[CloudFlare]" "${record_name} : ${ip}"
+###########################################
+###########################################
+nslookup ${record_name}
