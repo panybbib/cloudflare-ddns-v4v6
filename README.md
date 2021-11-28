@@ -19,7 +19,7 @@ sh ddns.sh
 cron定时任务条件
 ```shell
 #秒 每小时 天 周 月 
-0 */1 * * *
+0 */1 * * * sh /home/root/api-ddns.sh
 ```
 
 # 更新changerlog
