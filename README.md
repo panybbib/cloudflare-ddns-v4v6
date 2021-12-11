@@ -1,7 +1,5 @@
 # 用于CloudFlare的DDNS动态域名
-
-## 使用方法
-### 测试是否支持
+## 测试是否支持
 ```shell
 运行curl（必需）
 curl
@@ -10,7 +8,7 @@ wget
 运行nslookup（不必需）
 nslookup baidu.com
 ```
-### 使用步骤
+## 使用步骤
 前往https://dash.cloudflare.com/profile/api-tokens
 获取 Global API Key
 前往https://dash.cloudflare.com/
