@@ -11,13 +11,10 @@ wget
 nslookup baidu.com
 ```
 ### 使用步骤
-#### SET 1
 前往https://dash.cloudflare.com/profile/api-tokens
 获取 Global API Key
-#### SET 2
 前往https://dash.cloudflare.com/
 获取 需要解析的dns域名（需要提前使用cloudflare接管域名
-#### SET 3
 ```shell
 （如果你会用 wget 和 vi） 直接ssh链接服务器然后wget用vi修改）
 ````
@@ -42,14 +39,12 @@ record_type="A"
 是否代理dns解析 cdn加速。否：false 是：true。  dns页面的小云朵
 proxy="false"
 ```
-#### SET 4
 编辑并保存，使用SCP或者 winscp传输至路由器任意目录，你记得就好。
 列
 ```shell
     文件目录           用户@ip:/目录
-scp api-ddns.sh root@192.168.1.1:/root
+scp ddns.sh root@192.168.1.1:/root
 ```
-#### SET 5
 SSH链接之后执行（赋予权限并执行
 ```shell
 chmod +x /root/ddns.sh
@@ -60,7 +55,7 @@ sh /root/ddns.sh
 # cron定时任务条件
 ```shell
 #秒 每小时 天 周 月 
-0 */1 * * * sh /home/root/api-ddns.sh
+0 */1 * * * sh /root/ddns.sh
 ```
 
 
