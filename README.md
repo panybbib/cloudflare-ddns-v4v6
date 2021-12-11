@@ -17,7 +17,7 @@ nslookup baidu.com
 （如果你会用 wget 和 vi） 直接ssh链接服务器然后wget用vi修改）
 ````
 
-下载并编辑 https://github.com/n0raml/cloudflare-ddns-v4v6/blob/main/api-ddns.sh
+下载并编辑 https://github.com/n0raml/cloudflare-ddns-v4v6/blob/main/ddns.sh
 ```shell
 邮箱
 email="qq@email.com"
