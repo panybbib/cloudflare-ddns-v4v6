@@ -29,9 +29,9 @@ pushtoken="dasdadasd123213sdasd"
 #一对多 群组代码 不推就不填
 pushtpoic=""
 #推送标题
-pushtitle="Cloudfalre-DDNS已自动更新"
+pushtitle="CloudfalreDNS-Update"
 #推送内容
-pushcontent=$ip
+pushcontent=`echo $ip`
 
 #start Get zone identifier
 zone_id=`curl -ksX GET "https://api.cloudflare.com/client/v4/zones?name=${zone_name}" -H "X-Auth-Email: ${email}" -H "X-Auth-Key: ${GAK}" -H "Content-Type: application/json" | cut -b 19-50`
